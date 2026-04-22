@@ -22,11 +22,12 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    background: var(--bg-primary);
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--bg-primary);
+    background: transparent;
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -125,13 +126,15 @@ body {
     display: block;
 }
 
-/* Hero Section Background Pattern */
+/* Global Background Pattern */
 .container-bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: 10;
   overflow: hidden;
   opacity: 0.15;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
 }
 
 .container-bg::before {
@@ -355,7 +358,7 @@ body {
     display: flex;
     align-items: center;
     padding: 6rem 0 3rem;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.85) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -517,7 +520,7 @@ section {
 
 /* About Section */
 .about {
-    background: var(--bg-secondary);
+    background: rgba(26, 26, 26, 0.85);
 }
 
 .about-content {
@@ -601,7 +604,7 @@ section {
 
 /* Projects Section */
 .projects {
-    background: var(--bg-secondary);
+    background: rgba(26, 26, 26, 0.85);
 }
 
 .projects-grid {
@@ -844,6 +847,106 @@ section {
     line-height: 1.6;
 }
 
+/* Certifications Section Redesign */
+.certifications {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.85) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, var(--primary-color), var(--secondary-color), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(163, 112, 240, 0.2);
+}
+
+.cert-card:hover::before {
+    opacity: 1;
+}
+
+.cert-icon {
+    font-size: 2.2rem;
+    color: #fff;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-icon {
+    transform: rotate(10deg);
+}
+
+.cert-info h3 {
+    color: var(--text-primary);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
+}
+
+.cert-issuer {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .cert-card {
+        padding: 1.5rem;
+    }
+    
+    .cert-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.8rem;
+    }
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
@@ -1039,7 +1142,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--bg-secondary);
+    background: rgba(26, 26, 26, 0.9);
     padding: 2rem 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
@@ -1332,12 +1435,18 @@ section {
         justify-content: center;
     }
     
+    
     .skills-grid {
         gap: 1.5rem;
     }
     
     .skill-category {
         padding: 1.75rem;
+    }
+    
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 }
 
