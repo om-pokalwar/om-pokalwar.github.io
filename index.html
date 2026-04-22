@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- Base URL for GitHub Pages -->
+
+    <!-- Base URL for GitHub Pages (uncomment for production) -->
     <base href="https://om-pokalwar.github.io/">
-    
+
     <title>Omkar Pokalwar - Portfolio</title>
-    
+
     <!-- FAVICON - Files in assets folder -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -18,17 +19,21 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    
+
     <!-- For Android -->
     <link rel="icon" type="image/png" sizes="192x192" href="./assets/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="./assets/android-chrome-512x512.png">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <!-- Background Effects -->
+    <div class="container-bg" id="globalBg"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -41,6 +46,7 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#highlights" class="nav-link">Highlights</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -54,16 +60,13 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Background Pattern -->
-        <div class="container-bg"></div>
-        
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Omkar Vithal Pokalwar</h1>
-                <p class="hero-subtitle">Web Developer & Product Designer</p>
+                <p class="hero-subtitle">Frontend Developer | Automation Expert | Data Analyst</p>
                 <p class="hero-description">
-                    I enjoy creating tools that people actually use — from posture-correction systems like YogGuru 
-                    to smart routine planners and cloud-backed apps. I enjoy the whole process: thinking, building, 
+                    I enjoy creating tools that people actually use — from posture-correction systems like YogGuru
+                    to smart routine planners and cloud-backed apps. I enjoy the whole process: thinking, building,
                     refining, and finally shipping something people can interact with.
                 </p>
 
@@ -72,7 +75,9 @@
                         View Projects
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
                             </svg>
                         </div>
                     </a>
@@ -87,19 +92,24 @@
                 <div class="code-animation">
                     <div class="code-line">
                         <span class="line-number">1</span>
-                        <span class="code-content"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+                        <span class="code-content"><span class="keyword">const</span> <span
+                                class="variable">developer</span> = {</span>
                     </div>
                     <div class="code-line">
                         <span class="line-number">2</span>
-                        <span class="code-content">&nbsp;&nbsp;<span class="string">"name"</span>: <span class="string">"Omkar Pokalwar"</span>,</span>
+                        <span class="code-content">&nbsp;&nbsp;<span class="string">"name"</span>: <span
+                                class="string">"Omkar Pokalwar"</span>,</span>
                     </div>
                     <div class="code-line">
                         <span class="line-number">3</span>
-                        <span class="code-content">&nbsp;&nbsp;<span class="string">"role"</span>: <span class="string">"Full-Stack Developer"</span>,</span>
+                        <span class="code-content">&nbsp;&nbsp;<span class="string">"role"</span>: <span
+                                class="string">"Frontend Developer"</span>,</span>
                     </div>
                     <div class="code-line">
                         <span class="line-number">4</span>
-                        <span class="code-content">&nbsp;&nbsp;<span class="string">"skills"</span>: [<span class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"React"</span>],</span>
+                        <span class="code-content">&nbsp;&nbsp;<span class="string">"skills"</span>: [<span
+                                class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span
+                                class="string">"React"</span>],</span>
                     </div>
                     <div class="code-line">
                         <span class="line-number">5</span>
@@ -107,7 +117,8 @@
                     </div>
                     <div class="code-line">
                         <span class="line-number">6</span>
-                        <span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Impactful Products"</span>;</span>
+                        <span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span
+                                class="string">"Impactful Products"</span>;</span>
                     </div>
                     <div class="code-line">
                         <span class="line-number">7</span>
@@ -115,7 +126,8 @@
                     </div>
                     <div class="code-line">
                         <span class="line-number">8</span>
-                        <span class="code-content">}; <span class="comment">// Let's build something amazing!</span></span>
+                        <span class="code-content">}; <span class="comment">// Let's build something
+                                amazing!</span></span>
                     </div>
                 </div>
             </div>
@@ -128,20 +140,24 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a developer who enjoys building practical, user-focused software. Most of my projects solve real-world problems — improving yoga posture, guiding career choices, helping with routine planning, promoting sustainable shopping, or simplifying digital tasks.</p>
-                    <p>I like taking an idea, breaking it down, shaping it into something functional, and polishing it until it feels intuitive to use. My work spans web development, product design, system logic, and creating smooth user experiences.</p>
+                    <p>I'm a developer who enjoys building practical, user-focused software. Most of my projects solve
+                        real-world problems — improving yoga posture, guiding career choices, helping with routine
+                        planning, promoting sustainable shopping, or simplifying digital tasks.</p>
+                    <p>I like taking an idea, breaking it down, shaping it into something functional, and polishing it
+                        until it feels intuitive to use. My work spans web development, product design, system logic,
+                        and creating smooth user experiences.</p>
                     <div class="about-stats">
                         <div class="stat">
-                            <h3>8.62/10</h3>
+                            <h3>8.61/10</h3>
                             <p>CGPA</p>
                         </div>
                         <div class="stat">
-                            <h3>6+</h3>
+                            <h3>7+</h3>
                             <p>Projects</p>
                         </div>
                         <div class="stat">
-                            <h3>1</h3>
-                            <p>Internship</p>
+                            <h3>3</h3>
+                            <p>Internships</p>
                         </div>
                     </div>
                 </div>
@@ -155,35 +171,40 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Core Skills</h3>
+                    <h3>Languages & Frameworks</h3>
                     <div class="skill-items">
                         <span class="skill-item">Python</span>
                         <span class="skill-item">JavaScript</span>
                         <span class="skill-item">C / Embedded C</span>
                         <span class="skill-item">HTML & CSS</span>
                         <span class="skill-item">React (JSX)</span>
-                        <span class="skill-item">Tkinter</span>
+                        <span class="skill-item">TailwindCSS</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">REST APIs</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Tools & Platforms</h3>
                     <div class="skill-items">
                         <span class="skill-item">Git & GitHub</span>
-                        <span class="skill-item">Netlify</span>
                         <span class="skill-item">AWS</span>
-                        <span class="skill-item">VS Code</span>
-                        <span class="skill-item">Jupyter</span>
+                        <span class="skill-item">Azure</span>
+                        <span class="skill-item">Supabase</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">n8n (Automation)</span>
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">WordPress</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Netlify</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Software & Embedded</h3>
+                    <h3>Specialized Skills</h3>
                     <div class="skill-items">
-                        <span class="skill-item">Problem Solving</span>
-                        <span class="skill-item">System Design</span>
-                        <span class="skill-item">Microcontrollers</span>
-                        <span class="skill-item">Sensor Interfacing</span>
-                        <span class="skill-item">IoT Basics</span>
+                        <span class="skill-item">Computer Vision</span>
                         <span class="skill-item">Product Thinking</span>
+                        <span class="skill-item">Figma</span>
                     </div>
                 </div>
             </div>
@@ -199,13 +220,17 @@
                 <div class="card project-card">
                     <div class="card-info">
                         <h3 class="title">Digital Yoga Assistance — YogGuru</h3>
-                        <p class="description">A posture-correction platform that analyzes yoga poses and gives real-time feedback. Built with a modular backend so new asanas can be added easily.</p>
+                        <p class="description">A posture-correction platform using Computer Vision to analyze yoga poses
+                            in real-time. Features PWA support, Supabase backend, and a modular architecture for easily
+                            adding new asanas.</p>
                         <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Tkinter</span>
-                            <span class="tag">Web Deployment</span>
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">PWA</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('https://github.com/om-pokalwar/CareerNavigator', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar/CareerNavigator', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -215,14 +240,19 @@
                 <!-- Project 2 -->
                 <div class="card project-card">
                     <div class="card-info">
-                        <h3 class="title">AI-Based Routine Planner</h3>
-                        <p class="description">A smart planning tool that helps users organize their day more effectively. It adapts based on behavior, priorities, and progress.</p>
+                        <h3 class="title">Banquet Hall Management Web App</h3>
+                        <p class="description">A full-stack web application for managing banquet hall bookings, customer
+                            data, services, and billing. Features role-based access, real-time calendar management, and
+                            PDF invoice generation.</p>
                         <div class="tech-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">AI/ML</span>
-                            <span class="tag">Productivity</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">REST APIs</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('https://github.com/om-pokalwar/PlantraX-routine-planner', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -232,14 +262,16 @@
                 <!-- Project 3 -->
                 <div class="card project-card">
                     <div class="card-info">
-                        <h3 class="title">URL Shortener (AWS Cloud)</h3>
-                        <p class="description">A scalable URL-shortening service built on cloud infrastructure. Designed for fast redirects, clean usage, and expandable backend logic.</p>
+                        <h3 class="title">AI-Based Routine Planner</h3>
+                        <p class="description">A smart planning tool that helps users organize their day more
+                            effectively. It adapts based on behavior, priorities, and progress.</p>
                         <div class="tech-tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">Cloud</span>
-                            <span class="tag">Serverless</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Productivity</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('YOUR_GITHUB_REPO_LINK_3', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar/PlantraX-routine-planner', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -249,14 +281,16 @@
                 <!-- Project 4 -->
                 <div class="card project-card">
                     <div class="card-info">
-                        <h3 class="title">Career Navigating Website</h3>
-                        <p class="description">A guidance tool that helps students explore career paths by analyzing their choices and interests.</p>
+                        <h3 class="title">URL Shortener (AWS Cloud)</h3>
+                        <p class="description">A scalable URL-shortening service built on cloud infrastructure. Designed
+                            for fast redirects, clean usage, and expandable backend logic.</p>
                         <div class="tech-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">UI Design</span>
-                            <span class="tag">Career Guidance</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Serverless</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('https://github.com/om-pokalwar/CareerNavigator', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -266,14 +300,16 @@
                 <!-- Project 5 -->
                 <div class="card project-card">
                     <div class="card-info">
-                        <h3 class="title">Eco Wise — Sustainable Shopping</h3>
-                        <p class="description">A shopping-analysis tool that scores products based on sustainability factors.</p>
+                        <h3 class="title">Career Navigating Website</h3>
+                        <p class="description">An interactive guidance platform that helps students explore career paths
+                            through personalized assessments, interest analysis, and curated recommendations.</p>
                         <div class="tech-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">Azure AI</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Career Guidance</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('https://github.com/om-pokalwar/EcoWise', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar/CareerNavigator', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -283,14 +319,35 @@
                 <!-- Project 6 -->
                 <div class="card project-card">
                     <div class="card-info">
+                        <h3 class="title">Eco Wise — Sustainable Shopping</h3>
+                        <p class="description">A shopping-analysis tool that scores products based on sustainability
+                            factors using Azure AI for intelligent product evaluation.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Azure AI</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar/EcoWise', '_blank')">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="card project-card">
+                    <div class="card-info">
                         <h3 class="title">SociallyPro</h3>
-                        <p class="description">A clean and structured tool for managing and showcasing social media content.</p>
+                        <p class="description">A clean and structured tool for managing and showcasing social media
+                            content.</p>
                         <div class="tech-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                             <span class="tag">Web Design</span>
                         </div>
-                        <button class="github-repo-btn" onclick="window.open('https://github.com/om-pokalwar/SociallyPro', '_blank')">
+                        <button class="github-repo-btn"
+                            onclick="window.open('https://github.com/om-pokalwar/SociallyPro', '_blank')">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </button>
@@ -308,18 +365,65 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Embedded System Developer Intern</h3>
-                        <h4>AICTE & EduSkills (Microchip)</h4>
-                        <span class="date">2024</span>
-                        <p>Worked on microcontroller programming, sensor integration, debugging, and understanding real-world embedded workflows.</p>
+                        <h3>Software Engineering Intern (Team Lead)</h3>
+                        <h4>CANSPIRIT.AI</h4>
+                        <span class="date">Feb 2026 - Present | Remote</span>
+                        <p>Led a team to build automation workflows using n8n for real-world business use cases.
+                            Developed end-to-end pipelines with API integrations, data extraction, and processing.
+                            Improved operational efficiency by automating manual processes.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Project Lead — YogGuru</h3>
-                        <h4>Personal Project</h4>
-                        <span class="date">2023 - Present</span>
-                        <p>Led architecture, design, testing, and deployment. Turned a semester project into a product with real user potential.</p>
+                        <h3>UI/UX Developer Intern</h3>
+                        <h4>ZIDIO DEVELOPMENT</h4>
+                        <span class="date">Jun 2025 - Aug 2025 | Remote</span>
+                        <p>Conducted user research and identified usability issues to improve product design. Redesigned
+                            interfaces to enhance user experience using modern UI/UX principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="cert-info">
+                        <h3>Power BI Data Analyst (PL-300)</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h3>Anthropic MCP</h3>
+                        <p class="cert-issuer">Anthropic</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="cert-info">
+                        <h3>Cloud Computing with AI</h3>
+                        <p class="cert-issuer">Industry Certification</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h3>Web Development</h3>
+                        <p class="cert-issuer">Eduskills</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <div class="cert-info">
+                        <h3>DSA - C++</h3>
+                        <p class="cert-issuer">Certification</p>
                     </div>
                 </div>
             </div>
@@ -376,41 +480,26 @@
                     </div>
                     <div class="social-links">
                         <!-- LinkedIn Button -->
-                        <button
-                        class="social-btn linkedin-btn"
-                        onclick="window.open('https://www.linkedin.com/in/omkar-pokalwar', '_blank')"
-                        >
-                        <svg
-                            y="0"
-                            xmlns="http://www.w3.org/2000/svg"
-                            x="0"
-                            width="100"
-                            viewBox="0 0 100 100"
-                            preserveAspectRatio="xMidYMid meet"
-                            height="100"
-                            class="social-icon"
-                        >
-                            <path
-                            d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"
-                            ></path>
-                        </svg>
-                        <span class="social-text">Omkar Pokalwar</span>
+                        <button class="social-btn linkedin-btn"
+                            onclick="window.open('https://www.linkedin.com/in/omkar-pokalwar', '_blank')">
+                            <svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100"
+                                preserveAspectRatio="xMidYMid meet" height="100" class="social-icon">
+                                <path
+                                    d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z">
+                                </path>
+                            </svg>
+                            <span class="social-text">Omkar Pokalwar</span>
                         </button>
 
                         <!-- GitHub Button -->
-                        <button
-                        class="social-btn github-btn"
-                        onclick="window.open('https://github.com/om-pokalwar', '_blank')"
-                        >
-                        <svg
-                            role="img"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="social-icon"
-                        >
-                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
-                        </svg>
-                        <span class="social-text">om-pokalwar</span>
+                        <button class="social-btn github-btn"
+                            onclick="window.open('https://github.com/om-pokalwar', '_blank')">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-icon">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                                </path>
+                            </svg>
+                            <span class="social-text">om-pokalwar</span>
                         </button>
                     </div>
                 </div>
@@ -442,11 +531,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Omkar Vithal Pokalwar. All rights reserved.</p>
+            <p>&copy; 2026 Omkar Vithal Pokalwar. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="./script.js"></script>
 
 </body>
+
 </html>
