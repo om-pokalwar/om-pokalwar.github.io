@@ -98,8 +98,9 @@ if (contactForm) {
     });
 }
 
-// Navbar background on scroll
+// Navbar background on scroll and scroll animations
 window.addEventListener('scroll', () => {
+    // Navbar effect
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         if (window.scrollY > 50) {
@@ -108,6 +109,19 @@ window.addEventListener('scroll', () => {
         } else {
             navbar.style.background = 'rgba(10, 10, 10, 0.95)';
             navbar.style.backdropFilter = 'blur(10px)';
+        }
+    }
+
+    // Background effects visibility
+    const globalBg = document.getElementById('globalBg');
+    const contactSection = document.getElementById('contact');
+    
+    if (contactSection) {
+        const contactRect = contactSection.getBoundingClientRect();
+        const shouldHide = contactRect.top < window.innerHeight * 0.4;
+        
+        if (globalBg) {
+            globalBg.style.opacity = shouldHide ? '0' : '0.15'; // 0.15 is the original opacity
         }
     }
 });
